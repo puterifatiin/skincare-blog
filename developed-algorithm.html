@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Skin Analysis Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/Plugins/css/lightbox.min.css" rel="stylesheet">
+    <link href="/Plugins/css/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/Plugins/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Navbar start -->
+<div class="container-fluid fixed-top">
+    <div class="container topbar bg-primary d-none d-lg-block">
+        <div class="d-flex justify-content-between">
+            <div class="top-info ps-2">
+
+            </div>
+            <div class="top-link pe-2">
+                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Universiti Putra Malaysia</a></small>
+                <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">GROUP 3</a></small>
+            </div>
+        </div>
+    </div>
+    <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+            <a href="homePage.html" class="navbar-brand"><h1 class="text-primary display-6">Nawarisha</h1></a>
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="homePage.html" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Introduction</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="introduction.html" class="dropdown-item">Introduction</a>
+                            <a href="problem-solution.html" class="dropdown-item">Problem & Solution</a>
+                            <a href="team-members.html" class="dropdown-item">Team Members</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Information</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="chatbot-works.html" class="dropdown-item">How Skin Analysis Works?</a>
+                            <a href="flowchart.html" class="dropdown-item">Flowchart Accessibility</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Discussion</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="developed-algorithm.html" class="dropdown-item">Developed Algorithm</a>
+                            <a href="comparison.html" class="dropdown-item">Comparison Algorithm</a>
+                            <a href="algorithm-problem.html" class="dropdown-item">Potential Algorithm Problems</a>
+                            <a href="demo.html" class="dropdown-item">Demonstration</a>
+                        </div>
+                    </div>
+                    <a href="marketing.html" class="nav-item nav-link">Marketing</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conclusion</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="conclusion.html" class="dropdown-item">Conclusion</a>
+                            <a href="reflection.html" class="dropdown-item">Reflection</a>
+                            <a href="references.html" class="dropdown-item">References</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex m-3 me-0">
+                    <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                    <a href="#" class="my-auto">
+                        <i class="fas fa-user fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <div class="input-group w-75 mx-auto d-flex">
+                    <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                    <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search End -->
+
+<!-- Single Page Header Start -->
+<div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Developed Algorithm</h1>
+</div>
+<!-- Single Page Header End -->
+
+<!-- Developed Algorithm Start -->
+<!-- Data Preparation (skin_csv.py) -->
+<div class="text-center mx-auto mb-5" style="max-width: 800px;">
+    <br>
+    <h1 class="text-center text-black display-6">Step 1: Data Preparation</h1>
+    <p>Generate synthetic data for skin condition analysis.</p>
+</div>
+<h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Dataset Skin Analysis</h1>
+<div class="code-snippet">
+    <div class="code-header" onclick="toggleCode('code1')">skin_csv.py (click here)</div>
+    <div class="code-body" id="code1">
+        <pre><code class="language-python">
+import cv2
+import pandas as pd
+import numpy as np
+import os
+
+# Create a directory for sample images
+os.makedirs('sample_images', exist_ok=True)
+
+# Generate sample images and save them
+for i in range(1000):
+    img = np.random.randint(0, 255, (50, 50), dtype=np.uint8)
+    cv2.imwrite(f'sample_images/img_{i}.png', img)
+
+# Generate random data for the dataset
+data = {
+    'image_path': [f'sample_images/img_{i}.png' for i in range(1000)],
+    'hydration': np.random.randint(0, 101, size=1000),
+    'wrinkles': np.random.randint(0, 2, size=1000),
+    'acne': np.random.randint(0, 2, size=1000),
+    'pores_size': np.random.rand(1000) * 10,
+    'pigmentation': np.random.randint(0, 2, size=1000),
+    'redness': np.random.randint(0, 101, size=1000),
+    'uniformness': np.random.randint(0, 101, size=1000),
+    'eye_area': np.random.rand(1000) * 10
+}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Save to CSV
+df.to_csv('skin_analysis_dataset.csv', index=False)
+        </code></pre>
+    </div>
+</div>
+<div class="text mx-auto mb-5" style="padding: 20px;">
+    <p><b>Directory Creation:</b></p>
+    <ul>
+        <li>The script ensures that a directory named sample_images exists. If it does not, the script creates it. This directory will store all the generated images.</li>
+    </ul>
+    <div class="sample">
+        <img src="/Images/folder_sample.jpg" alt="folder">
+    </div>
+    <p><b>Image Generation:</b></p>
+    <ul>
+        <li>It generates 1000 grayscale images, each of size 50x50 pixels, with random pixel values. These images are saved in the sample_images directory with filenames img_0.png, img_1.png, ..., img_999.png.</li>
+    </ul>
+    <div class="sample">
+        <img src="/Images/sample_images.jpg" alt="sample_images">
+    </div>
+    <p><b>Data Generation:</b></p>
+    <ul>
+        <li>It generates random values for skin attributes (hydration, wrinkles, acne, pores_size, pigmentation, redness, uniformness, eye_area) for 1000 samples.</li>
+    </ul>
+    <p><b>DataFrame Creation:</b></p>
+    <ul>
+        <li>It constructs a Pandas DataFrame (df) using the generated data and links each sample image path to its corresponding attribute values.</li>
+    </ul>
+    <p><b>CSV Export:</b></p>
+    <ul>
+        <li>It saves the DataFrame to a CSV file (skin_analysis_dataset.csv) for later use in training and testing machine learning models.</li>
+    </ul>
+    <div class="embed-container">
+        <!-- Embedded Google Sheets document -->
+        <iframe class="embed-iframe" src="https://docs.google.com/spreadsheets/d/1YpyoNqsmvWQ2TDGuUTdF1wqLqGqFKPNgI0ooW-xvYcI/edit?usp=sharing"></iframe>
+
+        <!-- Clickable Link -->
+        <a href="https://docs.google.com/spreadsheets/d/1YpyoNqsmvWQ2TDGuUTdF1wqLqGqFKPNgI0ooW-xvYcI/edit?usp=sharing" target="_blank" class="embed-link">skin_analysis_dataset.csv</a>
+        <br>
+    </div>
+</div>
+
+<!-- Model Training and Prediction (skin_svr.py and skin_rfr.py) -->
+<div class="text-center mx-auto mb-5" style="max-width: 800px;">
+    <h1 class="text-center text-black display-6">Step 2: Model Training and Prediction</h1>
+    <p>Use two models to predict skin condition percentages based on facial images through webcam.</p>
+</div>
+<h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Support Vector Regression (SVR)</h1>
+<div class="code-snippet">
+    <div class="code-header" onclick="toggleCode('code2')">skin_svr.py (click here)</div>
+    <div class="code-body" id="code2">
+        <pre><code class="language-python">
+import cv2
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVR
+from sklearn.multioutput import MultiOutputRegressor
+from sklearn.model_selection import train_test_split
+
+# Initialize camera
+cap = cv2.VideoCapture(0)
+
+# Load pre-trained face detection model
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+# Initialize StandardScaler
+scaler = StandardScaler()
+
+# Create SVR model wrapped with MultiOutputRegressor
+svr_model = MultiOutputRegressor(SVR(kernel='rbf', C=100, gamma=0.1, epsilon=0.1))
+
+# Function to load images from dataset
+def load_images(df):
+    images = []
+    for img_path in df['image_path']:
+        img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+        img = cv2.resize(img, (50, 50))  # Resize to 50x50 pixels
+        images.append(img)
+    return np.array(images)
+
+# Function to fit the scaler and SVR model
+def fit_svr_model(train_images, train_labels):
+    # Flatten images for SVR
+    def flatten_images(images):
+        return images.reshape(images.shape[0], -1)
+
+    train_images_flat = flatten_images(train_images)
+
+    # Standardize features
+    train_images_flat_scaled = scaler.fit_transform(train_images_flat)
+
+    # Fit the SVR model
+    svr_model.fit(train_images_flat_scaled, train_labels)
+
+# Function to recognize faces and predict using SVR
+def recognize_face_with_svr(frame):
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+    for (x, y, w, h) in faces:
+        # Extract face region
+        face = gray[y:y+h, x:x+w]
+        face_resized = cv2.resize(face, (50, 50))  # Resize to 50x50 pixels
+        face_resized = face_resized.astype('float32') / 255.0
+        face_flat = face_resized.flatten().reshape(1, -1)
+
+        # Check if scaler is fitted
+        if hasattr(scaler, 'mean_'):
+            # Transform face data
+            face_flat = scaler.transform(face_flat)
+
+            # Predict skin conditions using SVR model
+            predictions = svr_model.predict(face_flat)
+            hydration, wrinkles, acne, pores_size, pigmentation, redness, uniformness, eye_area = predictions[0]
+
+            # Convert predictions to percentages
+            total = hydration + wrinkles + abs(acne) + pores_size + pigmentation + redness + uniformness + eye_area
+            hydration_percent = (hydration / total) * 100
+            wrinkles_percent = (wrinkles / total) * 100
+            acne_percent = (abs(acne) / total) * 100
+            pores_percent = (pores_size / total) * 100
+            pigmentation_percent = (pigmentation / total) * 100
+            redness_percent = (redness / total) * 100
+            uniformness_percent = (uniformness / total) * 100
+            eye_area_percent = (eye_area / total) * 100
+
+            # Draw rectangle around face and display predicted labels
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            cv2.putText(frame, f'SVR Hydration: {hydration_percent:.2f}%', (x, y-70), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'SVR Wrinkles: {wrinkles_percent:.2f}%', (x, y-55), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'SVR Acne: {acne_percent:.2f}%', (x, y-40), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'SVR Pores: {pores_percent:.2f}%', (x, y-25), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'SVR Pigmentation: {pigmentation_percent:.2f}%', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'SVR Redness: {redness_percent:.2f}%', (x, y+5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'SVR Uniformness: {uniformness_percent:.2f}%', (x, y+20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'SVR Eye Area: {eye_area_percent:.2f}%', (x, y+35), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+
+    return frame
+
+# Main workflow for SVR
+def main_svr():
+    # Load the dataset
+    df = pd.read_csv('skin_analysis_dataset.csv')
+
+    # Load images and labels
+    images = load_images(df)
+    labels = df[['hydration', 'wrinkles', 'acne', 'pores_size', 'pigmentation', 'redness', 'uniformness', 'eye_area']].values
+
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
+
+    # Fit the SVR model
+    fit_svr_model(X_train, y_train)
+
+    # Main loop
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        # Recognize faces and predict skin conditions using SVR
+        frame = recognize_face_with_svr(frame)
+
+        # Display the resulting frame
+        cv2.imshow('SVR Skin Condition Analysis', frame)
+
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    # Release the capture
+    cap.release()
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main_svr()
+        </code></pre>
+    </div>
+</div>
+
+<h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Random Forest Regression (RFR)</h1>
+<div class="code-snippet">
+    <div class="code-header" onclick="toggleCode('code3')">skin_rfr.py (click here)</div>
+    <div class="code-body" id="code3">
+        <pre><code class="language-python">
+import cv2
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.multioutput import MultiOutputRegressor
+from sklearn.model_selection import train_test_split
+
+# Initialize camera
+cap = cv2.VideoCapture(0)
+
+# Load pre-trained face detection model
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+# Initialize StandardScaler
+scaler = StandardScaler()
+
+# Create Random Forest Regressor model wrapped with MultiOutputRegressor with optimizations
+rfr_model = MultiOutputRegressor(
+    RandomForestRegressor(n_estimators=50, max_depth=10, max_features='sqrt', n_jobs=-1, random_state=42)
+)
+
+# Function to load images from dataset
+def load_images(df):
+    images = []
+    for img_path in df['image_path']:
+        img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+        img = cv2.resize(img, (50, 50))  # Resize to 50x50 pixels
+        images.append(img)
+    return np.array(images)
+
+# Function to fit the scaler and RFR model
+def fit_rfr_model(train_images, train_labels):
+    # Flatten images for Random Forest Regressor
+    def flatten_images(images):
+        return images.reshape(images.shape[0], -1)
+
+    train_images_flat = flatten_images(train_images)
+
+    # Standardize features
+    train_images_flat_scaled = scaler.fit_transform(train_images_flat)
+
+    # Fit the Random Forest Regressor model
+    rfr_model.fit(train_images_flat_scaled, train_labels)
+
+# Function to recognize faces and predict using RFR
+def recognize_face_with_rfr(frame):
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+    for (x, y, w, h) in faces:
+        # Extract face region
+        face = gray[y:y+h, x:x+w]
+        face_resized = cv2.resize(face, (50, 50))  # Resize to 50x50 pixels
+        face_resized = face_resized.astype('float32') / 255.0
+        face_flat = face_resized.flatten().reshape(1, -1)
+
+        # Check if scaler is fitted
+        if hasattr(scaler, 'mean_'):
+            # Transform face data
+            face_flat = scaler.transform(face_flat)
+
+            # Predict skin conditions using RFR model
+            predictions = rfr_model.predict(face_flat)
+            hydration, wrinkles, acne, pores_size, pigmentation, redness, uniformness, eye_area = predictions[0]
+
+            # Convert predictions to percentages
+            total = hydration + wrinkles + abs(acne) + pores_size + pigmentation + redness + uniformness + eye_area
+            hydration_percent = (hydration / total) * 100
+            wrinkles_percent = (wrinkles / total) * 100
+            acne_percent = (abs(acne) / total) * 100
+            pores_percent = (pores_size / total) * 100
+            pigmentation_percent = (pigmentation / total) * 100
+            redness_percent = (redness / total) * 100
+            uniformness_percent = (uniformness / total) * 100
+            eye_area_percent = (eye_area / total) * 100
+
+            # Draw rectangle around face and display predicted labels
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            cv2.putText(frame, f'RFR Hydration: {hydration_percent:.2f}%', (x, y-90), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'RFR Wrinkles: {wrinkles_percent:.2f}%', (x, y-75), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'RFR Acne: {acne_percent:.2f}%', (x, y-60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'RFR Pores: {pores_percent:.2f}%', (x, y-45), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'RFR Pigmentation: {pigmentation_percent:.2f}%', (x, y-30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'RFR Redness: {redness_percent:.2f}%', (x, y-15), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'RFR Uniformness: {uniformness_percent:.2f}%', (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.putText(frame, f'RFR Eye Area: {eye_area_percent:.2f}%', (x, y+15), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+
+    return frame
+
+# Main workflow for RFR
+def main_rfr():
+    # Load the dataset
+    df = pd.read_csv('skin_analysis_dataset.csv')
+
+    # Load images and labels
+    images = load_images(df)
+    labels = df[['hydration', 'wrinkles', 'acne', 'pores_size', 'pigmentation', 'redness', 'uniformness', 'eye_area']].values
+
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
+
+    # Fit the Random Forest Regressor model
+    fit_rfr_model(X_train, y_train)
+
+    # Main loop
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        # Recognize faces and predict skin conditions using RFR
+        frame = recognize_face_with_rfr(frame)
+
+        # Display the resulting frame
+        cv2.imshow('RFR Skin Condition Analysis', frame)
+
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    # Release the capture
+    cap.release()
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main_rfr()
+        </code></pre>
+    </div>
+</div>
+<div class="text mx-auto mb-5" style="padding: 20px;">
+    <p><b>Face Detection and Image Processing:</b></p>
+    <ul>
+        <li>The code captures images from the webcam and processes them to detect faces using the Haar Cascade face detector. Each detected face is resized to a standard size (50x50 pixels) for consistent processing.</li>
+    </ul>
+    <p><b>Feature Scaling:</b></p>
+    <ul>
+        <li>The images are scaled using a StandardScaler which normalizes the image data. This step ensures that the input features are on a similar scale, which is important for the performance of both the SVR and RFR models.</li>
+    </ul>
+    <p><b>Model Prediction:</b></p>
+    <ul>
+        <li>The both models SVR and RFR make predictions based on the processed image of the user's face. These models have been trained on a dataset with various skin conditions, so they should be able to predict different skin conditions (hydration, wrinkles, acne, etc.) for different users.</li>
+    </ul>
+    <p><b>Personalized Predictions:</b></p>
+    <ul>
+        <li>Since the models are trained to predict skin conditions from images, and every user will have a different face with different skin characteristics, the predictions should be personalized. If a new user has different hydration levels, wrinkles, acne, etc., the model should output different percentages for each of these conditions compared to another user.</li>
+    </ul>
+</div>
+<!-- Developed Algorithm End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <a href="#">
+                        <h1 class="text-primary mb-0">Nawarisha</h1>
+                        <p class="text-secondary mb-0">Skin Analysis AI</p>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Question">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Send</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-end pt-3">
+                        <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>2024 Nawarisha</a>, All Rights Reserved.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Plugins/js/easing.min.js"></script>
+<script src="/Plugins/js/waypoints.min.js"></script>
+<script src="/Plugins/js//lightbox.min.js"></script>
+<script src="/Plugins/js//owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="main.js"></script>
+
+</body>
+</html>
