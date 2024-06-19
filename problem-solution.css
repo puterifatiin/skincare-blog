@@ -1,0 +1,69 @@
+/* style.css */
+
+/* General section styling */
+.section {
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dbd4c1;
+}
+
+/* Header styling */
+.section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #343a40;
+    text-align: center;
+}
+
+/* Content styling */
+.section .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Problem and Solution Item styling */
+.section .content div {
+    background-color: rgb(234, 230, 223);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.section .content div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Icon styling */
+.section .content div i {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #6e7376;
+
+}
+
+/* Title styling for each item */
+.section .content div h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #b0b0b0;
+}
+
+/* Paragraph styling for each item */
+.section .content div p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #495057;
+    line-height: 1.6;
+}
