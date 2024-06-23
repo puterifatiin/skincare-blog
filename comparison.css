@@ -1,0 +1,80 @@
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.image-container img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer; /* Add pointer cursor to indicate clickable */
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+}
+.modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+h3 {
+    color: #B0B0B0;
+    font-size: 25px;
+    text-align: center;
+}   body {
+        font-family: Arial, sans-serif;
+    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+.analysis, .conclusion {
+    margin-left: 10px;
+    margin-top: 20px;
+}

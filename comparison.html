@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Skin Analysis Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/Plugins/css/lightbox.min.css" rel="stylesheet">
+    <link href="/Plugins/css/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/Plugins/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <!-- Comparison Stylesheet -->
+    <link href="comparison.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Navbar start -->
+<div class="container-fluid fixed-top">
+    <div class="container topbar bg-primary d-none d-lg-block">
+        <div class="d-flex justify-content-between">
+            <div class="top-info ps-2">
+
+            </div>
+            <div class="top-link pe-2">
+                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Universiti Putra Malaysia</a></small>
+                <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">GROUP 3</a></small>
+            </div>
+        </div>
+    </div>
+    <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+            <a href="homePage.html" class="navbar-brand"><h1 class="text-primary display-6">Nawarisha</h1></a>
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="homePage.html" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Introduction</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="introduction.html" class="dropdown-item">Introduction</a>
+                            <a href="problem-solution.html" class="dropdown-item">Problem & Solution</a>
+                            <a href="team-members.html" class="dropdown-item">Team Members</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Information</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="chatbot-works.html" class="dropdown-item">How Skin Analysis Works?</a>
+                            <a href="flowchart.html" class="dropdown-item">Flowchart Accessibility</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Discussion</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="developed-algorithm.html" class="dropdown-item">Developed Algorithm</a>
+                            <a href="comparison.html" class="dropdown-item">Comparison Algorithm</a>
+                            <a href="algorithm-problem.html" class="dropdown-item">Potential Algorithm Problems</a>
+                            <a href="demo.html" class="dropdown-item">Demonstration</a>
+                        </div>
+                    </div>
+                    <a href="marketing.html" class="nav-item nav-link">Marketing</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conclusion</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="conclusion.html" class="dropdown-item">Conclusion</a>
+                            <a href="reflection.html" class="dropdown-item">Reflection</a>
+                            <a href="references.html" class="dropdown-item">References</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex m-3 me-0">
+                    <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                    <a href="#" class="my-auto">
+                        <i class="fas fa-user fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <div class="input-group w-75 mx-auto d-flex">
+                    <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                    <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search End -->
+
+<!-- Single Page Header Start -->
+<div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Comparison of Algorithms</h1>
+</div>
+<!-- Single Page Header End -->
+
+<!-- Comparison Start -->
+
+<!-- SVR Section -->
+<section class="section py-5">
+    <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Support Vector Regression (SVR)</h1>
+    <div class="code-snippet">
+        <div class="code-header" onclick="toggleCode('code1')">skin_svr.py (click here)</div>
+        <div class="code-body" id="code1">
+        <pre><code class="language-python">
+import cv2
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVR
+from sklearn.multioutput import MultiOutputRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, explained_variance_score
+from skimage.feature import hog
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import learning_curve
+
+# Load the dataset
+df = pd.read_csv('skin_analysis_dataset.csv')
+
+
+# Function to load and preprocess images from dataset
+def load_images(df):
+    images = []
+    for img_path in df['image_path']:
+        img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+        img = cv2.resize(img, (50, 50))  # Resize to 50x50 pixels
+        hog_features = hog(img, pixels_per_cell=(8, 8), cells_per_block=(2, 2), visualize=False)
+        images.append(hog_features)
+    return np.array(images)
+
+
+# Load images and labels
+images = load_images(df)
+labels = df[
+    ['hydration', 'wrinkles', 'acne', 'pores_size', 'pigmentation', 'redness', 'uniformness', 'eye_area']].values
+target_names = ['Hydration', 'Wrinkles', 'Acne', 'Pores Size', 'Pigmentation', 'Redness', 'Uniformness', 'Eye Area']
+
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
+
+# Initialize StandardScaler
+scaler = StandardScaler()
+
+
+# Function to evaluate the model
+def evaluate_model(y_test, y_pred, model_name):
+    mae = mean_absolute_error(y_test, y_pred)
+    mse = mean_squared_error(y_test, y_pred)
+    rmse = np.sqrt(mse)
+    r2 = r2_score(y_test, y_pred)
+    explained_variance = explained_variance_score(y_test, y_pred)
+
+    # Handle zero values in y_test for MAPE calculation
+    nonzero_mask = y_test != 0
+    mape = np.mean(np.abs((y_test[nonzero_mask] - y_pred[nonzero_mask]) / y_test[nonzero_mask])) * 100
+
+    print(f'{model_name} Model Evaluation:')
+    print(f'MAE: {mae}')
+    print(f'MSE: {mse}')
+    print(f'RMSE: {rmse}')
+    print(f'R2 Score: {r2}')
+    print(f'Explained Variance: {explained_variance}')
+    print(f'MAPE: {mape}\n')
+
+    return mae, mse, rmse, r2, explained_variance, mape
+
+
+# Function to plot predictions vs true values
+def plot_predictions(y_test, y_pred, model_name):
+    plt.figure(figsize=(10, 6))
+    for i, target in enumerate(target_names):
+        plt.scatter(y_test[:, i], y_pred[:, i], alpha=0.5, label=target)
+    plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2)
+    plt.xlabel('True Values')
+    plt.ylabel('Predictions')
+    plt.title(f'{model_name} Predictions vs True Values')
+    plt.legend()
+    plt.show()
+
+
+# Function to plot residuals
+def plot_residuals(y_test, y_pred, model_name):
+    residuals = y_test - y_pred
+    plt.figure(figsize=(10, 6))
+    for i, target in enumerate(target_names):
+        sns.histplot(residuals[:, i], kde=True, label=target, alpha=0.5)
+    plt.title(f'{model_name} Residuals Distribution')
+    plt.xlabel('Residuals')
+    plt.ylabel('Frequency')
+    plt.legend()
+    plt.show()
+
+
+# Function to plot learning curves
+def plot_learning_curve(estimator, title, X, y):
+    train_sizes, train_scores, test_scores = learning_curve(estimator, X, y, cv=5, n_jobs=-1,
+                                                            train_sizes=np.linspace(.1, 1.0, 5))
+    train_scores_mean = np.mean(train_scores, axis=1)
+    train_scores_std = np.std(train_scores, axis=1)
+    test_scores_mean = np.mean(test_scores, axis=1)
+    test_scores_std = np.std(test_scores, axis=1)
+
+    plt.figure()
+    plt.title(title)
+    plt.xlabel("Training examples")
+    plt.ylabel("Score")
+    plt.grid()
+
+    plt.fill_between(train_sizes, train_scores_mean - train_scores_std, train_scores_mean + train_scores_std, alpha=0.1,
+                     color="r")
+    plt.fill_between(train_sizes, test_scores_mean - test_scores_std, test_scores_mean + test_scores_std, alpha=0.1,
+                     color="g")
+    plt.plot(train_sizes, train_scores_mean, 'o-', color="r", label="Training score")
+    plt.plot(train_sizes, test_scores_mean, 'o-', color="g", label="Cross-validation score")
+
+    plt.legend(loc="best")
+    plt.show()
+
+
+# SVR Model
+svr_model = MultiOutputRegressor(SVR(kernel='rbf', C=100, gamma=0.1, epsilon=0.1))
+
+# Standardize features
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Fit the SVR model
+svr_model.fit(X_train_scaled, y_train)
+
+# Evaluate the SVR model
+y_pred_svr = svr_model.predict(X_test_scaled)
+evaluate_model(y_test, y_pred_svr, 'SVR')
+plot_predictions(y_test, y_pred_svr, 'SVR')
+plot_residuals(y_test, y_pred_svr, 'SVR')
+plot_learning_curve(svr_model, 'SVR Learning Curve', X_train_scaled, y_train)
+        </code></pre>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Left Column: SVR Description -->
+            <div class="col-lg-6">
+                <div class="accordion" id="svrAccordion">
+                    <!-- What is SVR? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="svrHeadingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svrCollapseOne" aria-expanded="true" aria-controls="svrCollapseOne">
+                                What is SVR?
+                            </button>
+                        </h2>
+                        <div id="svrCollapseOne" class="accordion-collapse collapse" aria-labelledby="svrHeadingOne" data-bs-parent="#svrAccordion">
+                            <div class="accordion-body">
+                                <p class="card-text text-muted">Support Vector Machines (SVM) are commonly employed in machine learning for classification issues, but they may also be used to solve regression problems using Support Vector Regression (SVR). Support Vector Regression (SVR) is a machine learning technique used in regression analysis. The SVR Model in Machine Learning seeks to identify a function that approximates the connection between input variables and a continuous target variable while minimising prediction error.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SVR How SVR is Used? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="svrHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svrCollapseTwo" aria-expanded="false" aria-controls="svrCollapseTwo">
+                                How SVR is Used?
+                            </button>
+                        </h2>
+                        <div id="svrCollapseTwo" class="accordion-collapse collapse" aria-labelledby="svrHeadingTwo" data-bs-parent="#svrAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><strong>Margin of Tolerance (Epsilon):</strong> SVR provides a parameter epsilon (ε) that sets a margin of tolerance without penalising mistakes. </li>
+                                    <li class="mb-3"><strong>Hyperparameters:</strong> Hyperparameters in SVR include C which is regularisation parameter, kernel type, epsilon, and gamma for kernels such as RBF. Tuning these hyperparameters is critical for optimal performance.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SVR How SVR is Used in SKIN ANALYSIS AI? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="svrHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svrCollapseThree" aria-expanded="false" aria-controls="svrCollapseThree">
+                                How SVR solve the identified problems?
+                            </button>
+                        </h2>
+                        <div id="svrCollapseThree" class="accordion-collapse collapse" aria-labelledby="svrHeadingThree" data-bs-parent="#svrAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>Prediction of Skin Properties:</strong>
+                                        <ul class="list-unstyled ms-3">
+                                            <li class="mb-2">- Moisture Levels: SVR be trained to anticipate skin moisture levels using data such as humidity, temperature, and skincare product consumption.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Analysis of Skin Metrics:</strong>
+                                        <ul class="list-unstyled ms-3">
+                                            <li class="mb-2">- Wrinkle Formation: SVR can predict the frequency and severity of wrinkle formation based on variables including as age, sun exposure history, and skincare behaviours.</li>
+                                            <li class="mb-2">- Skin Texture: SVR can assess skin texture using parameters such as pore size, roughness, and elasticity.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Enhancing Dermatological Diagnosis:</strong>
+                                        <ul class="list-unstyled ms-3">
+                                            <li class="mb-2">- Once trained, SVR can make predictions about new data inputs. For example, given a collection of skin-related variables, SVR can forecast moisture levels or the possibility of a specific skin condition.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SVR Advantages and Disadvantages -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="svrHeadingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svrCollapseFour" aria-expanded="false" aria-controls="svrCollapseFour">
+                                Advantages and Disadvantages of SVR
+                            </button>
+                        </h2>
+                        <div id="svrCollapseFour" class="accordion-collapse collapse" aria-labelledby="svrHeadingFour" data-bs-parent="#svrAccordion">
+                            <div class="accordion-body">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-success"><i class="bi bi-check-circle-fill me-2"></i>Advantages</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><strong>Accuracy:</strong> SVR excels at generalisation and predicts accurately.</li>
+                                            <li class="mb-3"><strong>Ease of use:</strong> SVR implementation is easy.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-danger"><i class="bi bi-x-circle-fill me-2"></i>Disadvantages</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><strong>Parameter Tuning:</strong> The performance of SVR is strongly dependent on the selection of hyperparameters, which may be complex and time-consuming to optimise. .</li>
+                                            <li class="mb-3"><strong>Scalability:</strong> SVR are not suitable for huge datasets.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SVR Related Video -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="svrHeadingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svrCollapseFive" aria-expanded="false" aria-controls="svrCollapseFive">
+                                Related Video
+                            </button>
+                        </h2>
+                        <div id="svrCollapseFive" class="accordion-collapse collapse" aria-labelledby="svrHeadingFive" data-bs-parent="#svrAccordion">
+                            <div class="accordion-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/kPw1IGUAoY8?start=171" title="SVR Related Video" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- RFR Section -->
+<section class="section py-5 bg-light">
+    <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Random Forest Regression (RFR)</h1>
+    <div class="code-snippet">
+        <div class="code-header" onclick="toggleCode('code2')">skin_rfr.py (click here)</div>
+        <div class="code-body" id="code2">
+        <pre><code class="language-python">
+import cv2
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.multioutput import MultiOutputRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, explained_variance_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import learning_curve
+from skimage.feature import hog
+
+# Load the dataset
+df = pd.read_csv('skin_analysis_dataset.csv')
+
+# Function to load and preprocess images from dataset
+def load_images(df):
+    images = []
+    for img_path in df['image_path']:
+        img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+        img = cv2.resize(img, (50, 50))  # Resize to 50x50 pixels
+        hog_features = hog(img, pixels_per_cell=(8, 8), cells_per_block=(2, 2), visualize=False)
+        images.append(hog_features)
+    return np.array(images)
+
+# Load images and labels
+images = load_images(df)
+labels = df[['hydration', 'wrinkles', 'acne', 'pores_size', 'pigmentation', 'redness', 'uniformness', 'eye_area']].values
+target_names = ['Hydration', 'Wrinkles', 'Acne', 'Pores Size', 'Pigmentation', 'Redness', 'Uniformness', 'Eye Area']
+
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
+
+# Initialize StandardScaler
+scaler = StandardScaler()
+
+# Function to evaluate the model
+def evaluate_model(y_test, y_pred, model_name):
+    mae = mean_absolute_error(y_test, y_pred)
+    mse = mean_squared_error(y_test, y_pred)
+    rmse = np.sqrt(mse)
+    r2 = r2_score(y_test, y_pred)
+    explained_variance = explained_variance_score(y_test, y_pred)
+
+    # Handle zero values in y_test for MAPE calculation
+    nonzero_mask = y_test != 0
+    mape = np.mean(np.abs((y_test[nonzero_mask] - y_pred[nonzero_mask]) / y_test[nonzero_mask])) * 100
+
+    print(f'{model_name} Model Evaluation:')
+    print(f'MAE: {mae}')
+    print(f'MSE: {mse}')
+    print(f'RMSE: {rmse}')
+    print(f'R2 Score: {r2}')
+    print(f'Explained Variance: {explained_variance}')
+    print(f'MAPE: {mape}\n')
+
+    return mae, mse, rmse, r2, explained_variance, mape
+
+# Function to plot predictions vs true values
+def plot_predictions(y_test, y_pred, model_name):
+    plt.figure(figsize=(10, 6))
+    for i, target in enumerate(target_names):
+        plt.scatter(y_test[:, i], y_pred[:, i], alpha=0.5, label=target)
+    plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2)
+    plt.xlabel('True Values')
+    plt.ylabel('Predictions')
+    plt.title(f'{model_name} Predictions vs True Values')
+    plt.legend()
+    plt.show()
+
+# Function to plot residuals
+def plot_residuals(y_test, y_pred, model_name):
+    residuals = y_test - y_pred
+    plt.figure(figsize=(10, 6))
+    for i, target in enumerate(target_names):
+        sns.histplot(residuals[:, i], kde=True, label=target, alpha=0.5)
+    plt.title(f'{model_name} Residuals Distribution')
+    plt.xlabel('Residuals')
+    plt.ylabel('Frequency')
+    plt.legend()
+    plt.show()
+
+# Function to plot learning curves
+def plot_learning_curve(estimator, title, X, y):
+    train_sizes, train_scores, test_scores = learning_curve(estimator, X, y, cv=5, n_jobs=-1,
+                                                            train_sizes=np.linspace(.1, 1.0, 5))
+    train_scores_mean = np.mean(train_scores, axis=1)
+    train_scores_std = np.std(train_scores, axis=1)
+    test_scores_mean = np.mean(test_scores, axis=1)
+    test_scores_std = np.std(test_scores, axis=1)
+
+    plt.figure()
+    plt.title(title)
+    plt.xlabel("Training examples")
+    plt.ylabel("Score")
+    plt.grid()
+
+    plt.fill_between(train_sizes, train_scores_mean - train_scores_std, train_scores_mean + train_scores_std, alpha=0.1,
+                     color="r")
+    plt.fill_between(train_sizes, test_scores_mean - test_scores_std, test_scores_mean + test_scores_std, alpha=0.1,
+                     color="g")
+    plt.plot(train_sizes, train_scores_mean, 'o-', color="r", label="Training score")
+    plt.plot(train_sizes, test_scores_mean, 'o-', color="g", label="Cross-validation score")
+
+    plt.legend(loc="best")
+    plt.show()
+
+# Random Forest Regressor Model
+rfr_model = MultiOutputRegressor(RandomForestRegressor(n_estimators=50, max_depth=10, max_features='sqrt', n_jobs=-1, random_state=42))
+
+# Standardize features
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Fit the Random Forest Regressor model
+rfr_model.fit(X_train_scaled, y_train)
+
+# Evaluate the Random Forest Regressor model
+y_pred_rfr = rfr_model.predict(X_test_scaled)
+evaluate_model(y_test, y_pred_rfr, 'RFR')
+plot_predictions(y_test, y_pred_rfr, 'RFR')
+plot_residuals(y_test, y_pred_rfr, 'RFR')
+plot_learning_curve(rfr_model, 'RFR Learning Curve', X_train_scaled, y_trai
+        </code></pre>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Left Column: Placeholder for RFR -->
+            <div class="col-lg-6">
+                <div class="accordion" id="rfrAccordion">
+                    <!-- RFR Placeholder: What is RFR? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="rfrHeadingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rfrCollapseOne" aria-expanded="true" aria-controls="rfrCollapseOne">
+                                What is RFR?
+                            </button>
+                        </h2>
+                        <div id="rfrCollapseOne" class="accordion-collapse collapse" aria-labelledby="rfrHeadingOne" data-bs-parent="#rfrAccordion">
+                            <div class="accordion-body">
+                                <p class="card-text text-muted">Random Forest Regression is a flexible machine-learning approach that predicts numerical values. It integrates predictions from many decision trees to prevent overfitting and increase accuracy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  How RFR is Used? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="rfrHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rfrCollapseTwo" aria-expanded="false" aria-controls="rfrCollapseTwo">
+                                How RFR is Used?
+                            </button>
+                        </h2>
+                        <div id="rfrCollapseTwo" class="accordion-collapse collapse" aria-labelledby="rfrHeadingTwo" data-bs-parent="#rfrAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><strong>Bootstrap Aggregating:</strong> RFR is a method for training multiple models using random selections of training data. The forecasts from each model are then pooled, usually by averaging.</li>
+                                    <li class="mb-3"><strong>Stacking:</strong> It is predictions from one set of models are used as input characteristics for another model. The second-level model provides the final forecast.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  How RFR is Used in SKIN ANALYSIS AI? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="rfrHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rfrCollapseThree" aria-expanded="false" aria-controls="rfrCollapseThree">
+                                How RFR solve the identified problems?
+                            </button>
+                        </h2>
+                        <div id="rfrCollapseThree" class="accordion-collapse collapse" aria-labelledby="rfrHeadingThree" data-bs-parent="#rfrAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>Prediction of skin factors: </strong>
+                                        <ul class="list-unstyled ms-3">
+                                            <li class="mb-2"> Skin analysis frequently entails predicting factors such as skin moisture content, elasticity, pigmentation levels, and others. RFR can generate models based on training data to reliably predict these values.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Feature Selection: </strong>
+                                        <ul class="list-unstyled ms-3">
+                                            <li class="mb-2"> RFR is used to find key features from a wide range of variables that help predict skin conditions. This is critical for establishing which parameters such as texture, colour, and moisture levels.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RFR Advantages and Disadvantages -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="rfrHeadingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rfrCollapseFour" aria-expanded="false" aria-controls="rfrCollapseFour">
+                                Advantages and Disadvantages of RFR
+                            </button>
+                        </h2>
+                        <div id="rfrCollapseFour" class="accordion-collapse collapse" aria-labelledby="rfrHeadingFour" data-bs-parent="#rfrAccordion">
+                            <div class="accordion-body">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-success"><i class="bi bi-check-circle-fill me-2"></i>Advantages</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><strong> Scalability:</strong> RFR is helpful at managing huge datasets with several properties.</li>
+                                            <li class="mb-3"><strong>Handling:</strong> RFR can deal with missing data, outliers, and noisy characteristics.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-danger"><i class="bi bi-x-circle-fill me-2"></i>Disadvantages</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><strong>Computational Complexity:</strong> RFR is computationally intensive, particularly with huge datasets.</li>
+                                            <li class="mb-3"><strong>Overfitting:</strong>  This occurs if the model is too complicated or there are too many decision trees.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RFR Related Video -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="rfrHeadingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rfrCollapseFive" aria-expanded="false" aria-controls="rfrCollapseFive">
+                                Related Video
+                            </button>
+                        </h2>
+                        <div id="rfrCollapseFive" class="accordion-collapse collapse" aria-labelledby="rfrHeadingFive" data-bs-parent="#rfrAccordion">
+                            <div class="accordion-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/X1MRbEnEq2s"  title="RFR Related Video" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- RFR Section End -->
+
+<section class="section py-5">
+    <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Review on Suitability</h1>
+
+    <div class="image-container">
+        <div>
+            <h3>SVR</h3>
+            <img src="/Images/svr-1.jpg" alt="SVR Image 1" onclick="openModal(this)">
+            <img src="/Images/svr-2.jpg" alt="SVR Image 2" onclick="openModal(this)">
+            <img src="/Images/svr-3.jpg" alt="SVR Image 3" onclick="openModal(this)">
+            <img src="/Images/svr-4.jpg" alt="SVR Image 4" onclick="openModal(this)">
+        </div>
+        <div>
+            <h3>RFR</h3>
+            <img src="/Images/rfr-1.jpg" alt="RFR Image 1" onclick="openModal(this)">
+            <img src="/Images/rfr-2.jpg" alt="RFR Image 2" onclick="openModal(this)">
+            <img src="/Images/rfr-3.jpg" alt="RFR Image 3" onclick="openModal(this)">
+            <img src="/Images/rfr-4.jpg" alt="RFR Image 4" onclick="openModal(this)">
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Modal Image">
+        </div>
+    </div>
+</section>
+
+<section class="section py-5">
+    <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Discussion:</h1>
+    <h3 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Evaluation Table</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Metric</th>
+            <th>SVR</th>
+            <th>RFR</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>MAE</td>
+            <td>10.14</td>
+            <td>10.21</td>
+        </tr>
+        <tr>
+            <td>MSE</td>
+            <td>310.26</td>
+            <td>316.48</td>
+        </tr>
+        <tr>
+            <td>RMSE</td>
+            <td>17.61</td>
+            <td>17.79</td>
+        </tr>
+        <tr>
+            <td>R2 Score</td>
+            <td>-0.0064</td>
+            <td>-0.04</td>
+        </tr>
+        <tr>
+            <td>Explained Variance</td>
+            <td>-1.94e-16</td>
+            <td>-0.0294</td>
+        </tr>
+        <tr>
+            <td>MAPE</td>
+            <td>206.21</td>
+            <td>206.84</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="analysis">
+        <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: -10px;">Analysis:</h1>
+        <p><strong>R2 Score:</strong></p>
+        <p>SVR: -0.0064</p>
+        <p>RFR: -0.04</p>
+        <p>Both algorithms have negative R2 scores, indicating that they perform worse than a simple mean model. However, SVR has a slightly higher, less negative R2 score than RFR.</p>
+        <p><strong>Explained Variance:</strong></p>
+        <p>SVR: -1.94e-16</p>
+        <p>RFR: -0.0294</p>
+        <p>SVR has a variance closer to zero, indicating a marginally better explanation of variability compared to RFR, but both are still poor.</p>
+        <p><strong>Mean Absolute Percentage Error (MAPE):</strong></p>
+        <p>SVR: 206.21</p>
+        <p>RFR: 206.84</p>
+        <p>Both algorithms have very high MAPE values, indicating poor predictive accuracy. SVR has a slightly better MAPE than RFR.</p>
+    </div>
+    <div class="conclusion">
+        <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: -10px;">Conclusion:</h1>
+        <p>Overall, the SVR model demonstrates slightly better performance across most metrics compared to the RFR model.</p>
+        <p>However, both algorithms show poor performance with negative R2 scores and very high MAPE values. </p>
+        <p>The choosen algotihm is Support Vector Regression (SVR). This is because it can the RBF kernel can handle non-linear correlations, which is useful for complex data such as image characteristics. It is also suitable for datasets with numerous characteristics, such as HOG features extracted from pictures. </p>
+
+    </div>
+</section>
+
+
+<!-- Comparison End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <a href="#">
+                        <h1 class="text-primary mb-0">Nawarisha</h1>
+                        <p class="text-secondary mb-0">Skin Analysis AI</p>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Question">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Send</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-end pt-3">
+                        <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>2024 Nawarisha</a>, All Rights Reserved.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Plugins/js/easing.min.js"></script>
+<script src="/Plugins/js/waypoints.min.js"></script>
+<script src="/Plugins/js//lightbox.min.js"></script>
+<script src="/Plugins/js//owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="main.js"></script>
+
+<script>
+    // Function to open the modal
+    function openModal(element) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = element.src;
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
