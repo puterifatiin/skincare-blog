@@ -78,7 +78,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Information</a>
                         <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                            <a href="chatbot-works.html" class="dropdown-item">How Skin Analysis Works?</a>
+                            <a href="analysis-works.html" class="dropdown-item">How Skin Analysis Works?</a>
                             <a href="flowchart.html" class="dropdown-item">Flowchart Accessibility</a>
                         </div>
                     </div>
@@ -142,6 +142,10 @@
 
 <!-- SVR Section -->
 <section class="section py-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+        <br>
+        <h1 class="text-center text-black display-6">Algorithm Model Used</h1>
+    </div>
     <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Support Vector Regression (SVR)</h1>
     <div class="code-snippet">
         <div class="code-header" onclick="toggleCode('code1')">skin_svr.py (click here)</div>
@@ -653,16 +657,20 @@ plot_learning_curve(rfr_model, 'RFR Learning Curve', X_train_scaled, y_trai
 <!-- RFR Section End -->
 
 <section class="section py-5">
-    <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Review on Suitability</h1>
+    <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+        <h1 class="text-center text-black display-6">Review on Suitability</h1>
+    </div>
 
     <div class="image-container">
         <div>
             <h3>SVR</h3>
             <img src="/Images/svr-1.jpg" alt="SVR Image 1" onclick="openModal(this)">
             <img src="/Images/svr-2.jpg" alt="SVR Image 2" onclick="openModal(this)">
-            <img src="/Images/svr-3.jpg" alt="SVR Image 3" onclick="openModal(this)">
             <img src="/Images/svr-4.jpg" alt="SVR Image 4" onclick="openModal(this)">
+            <img src="/Images/svr-3.jpg" alt="SVR Image 3" onclick="openModal(this)">
+
         </div>
+
         <div>
             <h3>RFR</h3>
             <img src="/Images/rfr-1.jpg" alt="RFR Image 1" onclick="openModal(this)">
@@ -682,7 +690,9 @@ plot_learning_curve(rfr_model, 'RFR Learning Curve', X_train_scaled, y_trai
 </section>
 
 <section class="section py-5">
-    <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Discussion:</h1>
+    <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+        <h1 class="text-center text-black display-6">Discussion</h1>
+    </div>
     <h3 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Evaluation Table</h3>
     <table>
         <thead>
@@ -725,27 +735,33 @@ plot_learning_curve(rfr_model, 'RFR Learning Curve', X_train_scaled, y_trai
         </tr>
         </tbody>
     </table>
+    <br>
     <div class="analysis">
         <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: -10px;">Analysis:</h1>
+        <br>
         <p><strong>R2 Score:</strong></p>
-        <p>SVR: -0.0064</p>
-        <p>RFR: -0.04</p>
-        <p>Both algorithms have negative R2 scores, indicating that they perform worse than a simple mean model. However, SVR has a slightly higher, less negative R2 score than RFR.</p>
+        <li>SVR: -0.0064</li>
+        <li>RFR: -0.04</li>
+        <li>Both algorithms have negative R2 scores, indicating that they perform worse than a simple mean model. However, SVR has a slightly higher, less negative R2 score than RFR.</li><br>
         <p><strong>Explained Variance:</strong></p>
-        <p>SVR: -1.94e-16</p>
-        <p>RFR: -0.0294</p>
-        <p>SVR has a variance closer to zero, indicating a marginally better explanation of variability compared to RFR, but both are still poor.</p>
+        <li>SVR: -1.94e-16</li>
+        <li>RFR: -0.0294</li>
+        <li>SVR has a variance closer to zero, indicating a marginally better explanation of variability compared to RFR, but both are still poor.</li><br>
+
         <p><strong>Mean Absolute Percentage Error (MAPE):</strong></p>
-        <p>SVR: 206.21</p>
-        <p>RFR: 206.84</p>
-        <p>Both algorithms have very high MAPE values, indicating poor predictive accuracy. SVR has a slightly better MAPE than RFR.</p>
+        <li>SVR: 206.21</li>
+        <li>RFR: 206.84</li>
+        <li>Both algorithms have very high MAPE values, indicating poor predictive accuracy. SVR has a slightly better MAPE than RFR.</li><br>
     </div>
+    <br>
     <div class="conclusion">
-        <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: -10px;">Conclusion:</h1>
+        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+            <h1 class="text-center text-black display-6">Conclusion</h1>
+        </div>
         <p>Overall, the SVR model demonstrates slightly better performance across most metrics compared to the RFR model.</p>
         <p>However, both algorithms show poor performance with negative R2 scores and very high MAPE values. </p>
-        <p>The choosen algotihm is Support Vector Regression (SVR). This is because it can the RBF kernel can handle non-linear correlations, which is useful for complex data such as image characteristics. It is also suitable for datasets with numerous characteristics, such as HOG features extracted from pictures. </p>
-
+        <p>The choosen algotihm is Support Vector Regression (SVR). This is because it can the RBF kernel can handle non-linear correlations, which is useful for complex data such as image characteristics. </p>
+        <p>It is also suitable for datasets with numerous characteristics, such as HOG features extracted from pictures. </p>
     </div>
 </section>
 
