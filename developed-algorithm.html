@@ -177,29 +177,29 @@ df.to_csv('skin_analysis_dataset.csv', index=False)
     </div>
 </div>
 <div class="text mx-auto mb-5" style="padding: 20px;">
-    <p><b>Directory Creation:</b></p>
+    <p><b>1) Directory Creation:</b></p>
     <ul>
         <li>The script ensures that a directory named sample_images exists. If it does not, the script creates it. This directory will store all the generated images.</li>
     </ul>
     <div class="sample">
         <img src="/Images/folder_sample.jpg" alt="folder">
     </div>
-    <p><b>Image Generation:</b></p>
+    <p><b>2) Image Generation:</b></p>
     <ul>
         <li>It generates 1000 grayscale images, each of size 50x50 pixels, with random pixel values. These images are saved in the sample_images directory with filenames img_0.png, img_1.png, ..., img_999.png.</li>
     </ul>
     <div class="sample">
         <img src="/Images/sample_images.jpg" alt="sample_images">
     </div>
-    <p><b>Data Generation:</b></p>
+    <p><b>3) Data Generation:</b></p>
     <ul>
         <li>It generates random values for skin attributes (hydration, wrinkles, acne, pores_size, pigmentation, redness, uniformness, eye_area) for 1000 samples.</li>
     </ul>
-    <p><b>DataFrame Creation:</b></p>
+    <p><b>4) DataFrame Creation:</b></p>
     <ul>
         <li>It constructs a Pandas DataFrame (df) using the generated data and links each sample image path to its corresponding attribute values.</li>
     </ul>
-    <p><b>CSV Export:</b></p>
+    <p><b>5) CSV Export:</b></p>
     <ul>
         <li>It saves the DataFrame to a CSV file (skin_analysis_dataset.csv) for later use in training and testing machine learning models.</li>
     </ul>
@@ -350,6 +350,36 @@ if __name__ == "__main__":
         </code></pre>
     </div>
 </div>
+<div class="text mx-auto mb-5" style="padding: 20px;">
+    <p><b>1) Importing Libraries:</b></p>
+    <ul>
+        <li>We start by importing the necessary libraries: OpenCV for image processing, NumPy for numerical operations, Pandas for data manipulation, and Scikit-learn for machine learning.</li>
+    </ul>
+    <p><b>2) Initializing Components:</b></p>
+    <ul>
+        <li>The camera is initialized using cv2.VideoCapture(0).</li>
+        <li>A pre-trained face detection model (haarcascade_frontalface_default.xml) is loaded using OpenCV.</li>
+        <li>We create an instance of StandardScaler for feature scaling.</li>
+        <li>The SVR model is wrapped with MultiOutputRegressor to handle multiple output predictions simultaneously.
+        </li>
+    </ul>
+    <p><b>4) Loading Images:</b></p>
+    <ul>
+        <li>The load_images function reads images from the dataset, converts them to grayscale, resizes them to 50x50 pixels, and returns them as a NumPy array.</li>
+    </ul>
+    <p><b>4) Fitting the SVR Model:</b></p>
+    <ul>
+        <li>The fit_svr_model function flattens the images, scales the features using StandardScaler, and fits the SVR model with the training data.</li>
+    </ul>
+    <p><b>5) Face Recognition and Prediction:</b></p>
+    <ul>
+        <li>The recognize_face_with_svr function detects faces in the video frame, preprocesses the face region, and uses the SVR model to predict skin conditions. The predictions are converted to percentages and displayed on the video frame.</li>
+    </ul>
+    <p><b>6) Main Workflow:</b></p>
+    <ul>
+        <li>The main_svr function loads the dataset, splits it into training and testing sets, fits the SVR model, and starts a loop to capture video frames, recognize faces, and display predictions.</li>
+    </ul>
+</div>
 
 <h1 class="text text-black display-6" style=" color: #B0B0B0; font-size: 25px; padding: 10px;">Random Forest Regression (RFR)</h1>
 <div class="code-snippet">
@@ -486,14 +516,39 @@ if __name__ == "__main__":
     </div>
 </div>
 <div class="text mx-auto mb-5" style="padding: 20px;">
-    <p><b>Face Detection and Image Processing:</b></p>
+    <p><b>1) Importing Libraries:</b></p>
     <ul>
-        <li>The code captures images from the webcam and processes them to detect faces using the Haar Cascade face detector. Each detected face is resized to a standard size (50x50 pixels) for consistent processing.</li>
+        <li>Similar to the SVR script, we import libraries for image processing, numerical operations, data manipulation, and machine learning.</li>
     </ul>
-    <p><b>Feature Scaling:</b></p>
+    <p><b>2) Initializing Components:</b></p>
     <ul>
-        <li>The images are scaled using a StandardScaler which normalizes the image data. This step ensures that the input features are on a similar scale, which is important for the performance of both the SVR and RFR models.</li>
+        <li>The camera and face detection model are initialized in the same way as in the SVR script.</li>
+        <li>A StandardScaler instance is created for feature scaling.</li>
+        <li>The Random Forest Regressor model is wrapped with MultiOutputRegressor, with specific parameters for optimization.</li>
     </ul>
+    <p><b>3) Loading Images:</b></p>
+    <ul>
+        <li>The load_images function is identical to the one in the SVR script, reading and resizing images to 50x50 pixels.</li>
+    </ul>
+    <p><b>4) Fitting the RFR Model:</b></p>
+    <ul>
+        <li>The fit_rfr_model function flattens the images, scales the features, and fits the RFR model with the training data.</li>
+    </ul>
+    <p><b>5) Face Recognition and Prediction:</b></p>
+    <ul>
+        <li>The recognize_face_with_rfr function detects faces, preprocesses the face region, and uses the RFR model to predict skin conditions. The predictions are converted to percentages and displayed on the video frame.</li>
+    </ul>
+    <p><b>6) Main Workflow:</b></p>
+    <ul>
+        <li>The main_rfr function follows the same workflow as main_svr, loading the dataset, splitting it, fitting the RFR model, and starting a loop to capture video frames, recognize faces, and display predictions.</li>
+    </ul>
+</div>
+
+<div class="text-center mx-auto mb-5" style="max-width: 800px;">
+    <h1 class="text-center text-black display-6">Summary</h1>
+    <p>In summary, both scripts use machine learning models to analyze skin conditions from facial images captured in real-time. The SVR model and the RFR model each have their unique approaches and parameters for predicting multiple skin condition metrics.</p>
+</div>
+<div class="text mx-auto mb-5" style="padding: 20px;">
     <p><b>Model Prediction:</b></p>
     <ul>
         <li>The both models SVR and RFR make predictions based on the processed image of the user's face. These models have been trained on a dataset with various skin conditions, so they should be able to predict different skin conditions (hydration, wrinkles, acne, etc.) for different users.</li>
@@ -503,6 +558,7 @@ if __name__ == "__main__":
         <li>Since the models are trained to predict skin conditions from images, and every user will have a different face with different skin characteristics, the predictions should be personalized. If a new user has different hydration levels, wrinkles, acne, etc., the model should output different percentages for each of these conditions compared to another user.</li>
     </ul>
 </div>
+
 <!-- Developed Algorithm End -->
 
 
