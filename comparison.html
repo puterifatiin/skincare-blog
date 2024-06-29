@@ -536,7 +536,7 @@ y_pred_rfr = rfr_model.predict(X_test_scaled)
 evaluate_model(y_test, y_pred_rfr, 'RFR')
 plot_predictions(y_test, y_pred_rfr, 'RFR')
 plot_residuals(y_test, y_pred_rfr, 'RFR')
-plot_learning_curve(rfr_model, 'RFR Learning Curve', X_train_scaled, y_trai
+plot_learning_curve(rfr_model, 'RFR Learning Curve', X_train_scaled, y_train)
         </code></pre>
         </div>
     </div>
@@ -760,7 +760,7 @@ plot_learning_curve(rfr_model, 'RFR Learning Curve', X_train_scaled, y_trai
         </div>
         <p>Overall, the SVR model demonstrates slightly better performance across most metrics compared to the RFR model.</p>
         <p>However, both algorithms show poor performance with negative R2 scores and very high MAPE values. </p>
-        <p>The choosen algotihm is Support Vector Regression (SVR). This is because it can the RBF kernel can handle non-linear correlations, which is useful for complex data such as image characteristics. </p>
+        <p>The choosen algotihm is Support Vector Regression (SVR). This is because the RBF kernel can handle non-linear correlations, which is useful for complex data such as image characteristics. </p>
         <p>It is also suitable for datasets with numerous characteristics, such as HOG features extracted from pictures. </p>
     </div>
 </section>
